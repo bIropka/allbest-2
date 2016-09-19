@@ -56,6 +56,7 @@ footer {
 }
 .articles .tel-heder {
     margin-top: -5px;
+    display: inline-block;
 }
 .articles .tel-heder a {
     display: block;
@@ -92,6 +93,10 @@ footer {
 /* nav */
 nav {
     background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+nav .fa-bars {
+    display: none;
 }
 nav:after, .article-card:after, .aside-item .custom-calendar .month:after, .aside-item .custom-calendar .weekday:after, .aside-item .custom-calendar .day:after {
     content: '';
@@ -193,7 +198,7 @@ nav ul li a.active:hover {
 .page-nav ul li {
     vertical-align: middle;
     display: inline-block;
-    margin-left: -5px;
+    margin-left: -2px;
 }
 .page-nav ul li a {
     display: block;
@@ -296,6 +301,7 @@ nav ul li a.active:hover {
 }
 .aside-item .custom-calendar {
     margin-bottom: 10px;
+    max-width: 250px;
 }
 .aside-links li {
     margin-bottom: 15px;
@@ -350,6 +356,7 @@ nav ul li a.active:hover {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
+    margin: auto;
 }
 .aside-item .custom-calendar .day a.active {
     background-color: #61a200;
@@ -368,18 +375,84 @@ nav ul li a.active:hover {
     color: #ffffff;
 }
 
+.aside-item .custom-calendar .month {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+}
 .aside-item .custom-calendar .month i {
     color: #b3baa3;
     font-size: 28px;
-    vertical-align: middle;
-    float: left;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    cursor: pointer;
+}
+.aside-item .custom-calendar .month i:hover {
+    color: inherit;
 }
 .aside-item .custom-calendar .month .fa-angle-right {
-    float: right;
+    left: auto;
+    right: 0;
 }
 .aside-item .custom-calendar .month .month-current {
     display: inline-block;
     vertical-align: middle;
     font-family: 'OpenSans Bold', sans-serif;
     font-size: 14px;
+}
+
+@media (max-width: 980px) {
+    .article-card .article-details {
+        width: 73%;
+    }
+    nav .fa-bars {
+        display: block;
+        font-size: 27px;
+        padding: 10px;
+        color: #ffffff;
+    }
+    nav .fa-bars.active {
+        color: #b52868;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        float: none;
+    }
+    nav ul li a {
+        padding: 10px;
+        border-top: 1px solid #ffffff;
+        text-decoration: none;
+    }
+    nav ul li:first-child a {
+        border-top: none;
+    }
+    nav ul li a:hover {
+        color: #ffffff;
+    }
+    nav ul li a.active {
+        background: transparent;
+        color: #61a200;
+    }
+}
+
+@media (max-width: 768px) {
+    .articles header {
+        text-align: center;
+    }
+    .articles .tel-heder {
+        margin-left: 30px;
+    }
+    .article-card .article-images-wrap {
+        width: 192px;
+        height: 192px;
+        float: none;
+    }
+    .article-card .article-details {
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+    }
 }

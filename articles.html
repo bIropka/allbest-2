@@ -65,6 +65,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 
+						<i class="fa fa-bars"></i>
+
 						<ul>
 							<li><a href="main.html">ГЛАВНАЯ</a></li>
 							<li><a href="main.html">ОТЗЫВЫ</a></li>
@@ -80,7 +82,7 @@
 		<div class="container-fluid articles-content">
 			<div class="row">
 
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
+				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 
 					<main>
 
@@ -188,7 +190,7 @@
 
 				</div>
 
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
 
 					<aside>
 
@@ -372,26 +374,30 @@
 	<!-- timer -->
 	<script src="js/flipclock.js" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8">
-		var clock;
-		
-		$(document).ready(function() {
-			var clock;
 
-			clock = $('.clock').FlipClock({
-		        clockFace: 'DailyCounter',
-		        autoStart: false,
-		        callbacks: {
-		        	stop: function() {
-		        		$('.message').html('The clock has stopped!')
-		        	}
-		        }
-		    });
-				    
-		    clock.setTime(2220880);
-		    clock.setCountdown(true);
-		    clock.start();
+		$(document).ready(function() {
+
+			$('.fa-bars').click(function() {
+				$(this).toggleClass('active');
+				$('nav ul').slideToggle();
+			});
+
+			if ($(window).width() < '981'){
+				$('nav ul').slideUp();
+			} else {
+				$('nav ul').slideDown();
+			}
+
+			$(window).resize(function(){
+				if ($(window).width() < '981'){
+					$('nav ul').slideUp();
+				} else {
+					$('nav ul').slideDown();
+				}
+			});
 
 		});
+
 	</script>
 <!-- script -->
 </body>
