@@ -88,7 +88,9 @@ footer {
 .articles .tel-heder a:hover:before {
     left: -25px;
 }
-
+.articles footer {
+    padding: 20px 0;
+}
 
 /* nav */
 nav {
@@ -140,14 +142,15 @@ nav ul li a.active:hover {
     padding: 25px 0;
     border-bottom: 1px solid #cfd1c8;
 }
-.article-card .article-images-wrap {
-    width: 20%;
-    padding-top: 20%;
+.article-card .article-image-wrap {
+    display: block;
+    width: 22%;
+    padding-top: 22%;
     position: relative;
     overflow: hidden;
     float: left;
 }
-.article-card .article-images-wrap img {
+.article-card .article-image-wrap img {
     display: block;
     width: 100%;
     height: auto;
@@ -230,7 +233,7 @@ nav ul li a.active:hover {
     margin-right: -15px;
     padding: 25px 0 10px;
 }
-.form-search label {
+.articles .form-search {
     display: block;
     width: 90%;
     margin-left: 5%;
@@ -238,10 +241,25 @@ nav ul li a.active:hover {
     position: relative;
     margin-bottom: 25px;
 }
-.form-search label i {
+.form-search label, .form-search input {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.form-search button {
+    display: block;
+    width: 35px;
+    height: 35px;
     position: absolute;
-    top: 4px;
+    top: 0;
     right: 10px;
+    border: none;
+    background: transparent;
+}
+.form-search button:hover, .form-search button:active {
+    border: none;
+}
+.form-search button i {
     font-size: 24px;
     color: #2f302a;
     -webkit-transform: scaleX(-1);
@@ -251,10 +269,8 @@ nav ul li a.active:hover {
     transform: scaleX(-1);
 }
 .form-search input {
-    display: block;
-    width: 100%;
-    height: 100%;
     border: 1px solid #7dbc1b;
+    padding-right: 40px;
 }
 .form-search input:focus + i {
     display: none;
@@ -403,9 +419,7 @@ nav ul li a.active:hover {
 }
 
 @media (max-width: 980px) {
-    .article-card .article-details {
-        width: 73%;
-    }
+
     nav .fa-bars {
         display: block;
         font-size: 27px;
@@ -436,6 +450,12 @@ nav ul li a.active:hover {
         background: transparent;
         color: #61a200;
     }
+    .articles .custom-calendar {
+        margin: 50px auto 0;
+    }
+    .articles aside {
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -445,14 +465,35 @@ nav ul li a.active:hover {
     .articles .tel-heder {
         margin-left: 30px;
     }
-    .article-card .article-images-wrap {
+    .article-card .article-image-wrap {
         width: 192px;
         height: 192px;
         float: none;
+        margin: auto;
     }
     .article-card .article-details {
         width: 100%;
         float: none;
         margin-top: 20px;
     }
+    .articles footer {
+        text-align: center;
+    }
+    .articles footer .copirait, .articles footer .tel-heder, .articles footer .social {
+        float: none;
+        display: inline-block;
+        text-align: left;
+        position: relative;
+        width: 280px;
+        margin: 10px;
+        min-width: 280px;
+        max-width: 280px;
+    }
+    .articles footer .copirait {
+        padding-right: 60px;
+    }
+    .articles footer .tel-heder {
+        padding-left: 35px;
+    }
+
 }
