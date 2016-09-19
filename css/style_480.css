@@ -1,0 +1,73 @@
+@media (max-width: 480px){
+	.info_block p:after
+	{
+		content: '480'
+	}
+	h1{
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.tel-heder{
+		margin-bottom: 20px;
+	}
+	.tel-heder,
+	.tel-heder div{
+		float: none;
+		text-align: center;
+	}
+
+	header .top-header .right-header .call-back{
+		float: none;
+		margin: auto;
+		width: auto;
+		display: block;
+		max-width: 250px;
+	}
+	.benefit-section ul li{
+		float: none;
+		width: 100%;
+		margin-bottom: 13px;
+	}
+	.benefit-section .col-lg-12::before{
+		display: none;
+	}
+	.action-section .action-list ul li{
+		float: none;
+		width: 100%;
+	}
+	.action-section .action-list ul li:nth-child(1)::after,
+	.action-section .action-list ul li:nth-child(2)::after{
+		position: static;
+		text-align: center;
+	}
+	.action-section .action-list ul li .img-action{
+		max-width: 240px;
+		margin: auto;
+	}
+	.action-section .action-list .order-now .link-more{
+		margin-top: 30px;
+	}
+	.action-section .action-list{
+		margin-bottom: 50px;
+	}
+	ul.reviews-ul li{
+		width: 100%;
+		float: none;
+		min-height: 0;
+	}
+	footer .social{
+		position: static;
+		text-align: left;
+	}
+	.links-block a{
+		display: block;
+		width: 250px;
+		float: none !important;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.benefit-section ul li{
+		clear: both !important;
+	}
+}

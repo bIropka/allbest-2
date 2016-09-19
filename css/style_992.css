@@ -1,0 +1,134 @@
+@media (max-width: 992px){
+	.info_block p:after
+	{
+		content: '992px'
+	}
+	header .wrap-title-header::before{
+		content: none;
+	}
+	header .wrap-title-header{
+		padding-left: 0;
+	}
+
+	form.form-horizontal .button-class{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	form.form-horizontal label{
+		width: 32%;
+		margin-bottom: 20px;
+	}
+	form.form-horizontal label:last-of-type{
+		margin-right: 0;
+	}
+	form.form-horizontal .button-class input{
+		max-width: 250px;
+	}
+	.video-section .block-video .block-video-l{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.video-section .block-video .block-video-r{
+		width: 100%;
+		float: none;
+	}
+	header .top-header .logo{
+		margin-right: 0;
+	}
+	.tel-heder{
+		margin-right: 20px;
+	}
+	header .tel-heder a{
+		font-size: 32px;
+	}
+	h1{
+		font-size: 45px;
+		line-height: 46px;
+	}
+	.benefit-section .col-lg-12::before{
+		opacity: 0.2;
+	}
+	.action-section .title-action .timer-action{
+		float: none;
+		clear: both;
+		padding-top: 24px;
+	}
+	.action-section .title-action .tilte-ac-l{
+		float: none;
+		margin-top: 62px;
+	}
+	.action-section .title-action{
+		text-align: center;
+		padding-left: 0;
+	}
+	.action-section .title-action .timer-action #CDT{
+		float: none;
+		text-align: center;
+	}
+	.action-section .action-info{
+		left: 40%;
+		left: calc(50% - 112px);
+	}
+	.action-section .action-list ul{
+		width: 100%;
+		float: none;
+		margin-bottom: 25px;
+	}
+	.action-section .action-list{
+		margin-bottom: 30px;
+	}
+	.action-section .action-list .order-now{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.action-section .action-list .order-now .link-more{
+		float: none;
+		margin-top: 10px;
+	}
+	.action-section .action-list ul li:nth-child(1)::after,
+	.action-section .action-list ul li:nth-child(2)::after{
+		top: calc(50% - 67px);
+		font-size: 60px;
+		right: -58px;
+	}
+	.reviews-section .top-reviews .links-block a{
+		padding: 12px 27px;
+	}
+	.reviews-section .top-reviews .links-block{
+		margin-top: 20px;
+	}
+	ul.reviews-ul li{
+		width: 48%;
+		float: left;
+		margin-right: 0;
+	}
+	ul.reviews-ul li:nth-child(2n){
+		float: right;
+	}
+	ul.reviews-ul li:nth-child(2n) + li{
+		clear: left;
+	}
+	.how-order-section{
+		background-position: 40% 0;
+	}
+	.how-order-section ul{
+		max-width: 460px;
+	}
+	footer .social{
+		padding-right: 59px;
+	}
+	.slider-section nav a{
+		margin-bottom: 10px;
+	}
+	.timer-clock{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.timer-clock .clock{
+		display: inline-block;
+		width: auto;
+	}
+}

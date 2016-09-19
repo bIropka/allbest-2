@@ -1,0 +1,21 @@
+@media (max-width: 1200px) {
+	.info_block p:after
+	{
+		content: '1200px';
+	}
+	.nbs-flexisel-container{
+		width: 100%;
+		width: calc(100% - 30px);
+		margin-left: 15px;
+	}
+	header .top-header .block-wiki{
+		display: none;
+	}
+	.tegs-img{
+		left: 0;
+	}
+	.action-section .title-action .timer-action .text-timer{
+		display: none;
+	}
+	
+}

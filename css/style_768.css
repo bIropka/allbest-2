@@ -1,0 +1,93 @@
+@media (max-width: 768px){
+	.info_block p:after
+	{
+		content: '768'
+	}
+	header .top-header .right-header{
+		float: none;
+		clear: both;
+	}
+	header .top-header .logo{
+		float: none;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	header .button-grean{
+		width: 197px;
+		margin-left: 0;
+	}
+	.tel-heder{
+		margin-right: 0;
+	}
+	header .wrap-title-header:after{
+		content: none;
+	}
+	form.form-horizontal label{
+		width: 100%;
+		max-width: 300px;
+		display: block;
+		float: none;
+		margin: auto !important;
+		margin-bottom: 19px !important;
+	}
+	form.form-horizontal .button-class input{
+		max-width: 300px;
+		width: 100%;
+	}
+	.benefit-section ul{
+		margin-left: 0;
+	}
+	.benefit-section ul li{
+		font-size: 18px;
+	}
+	.reviews-section .top-reviews h4{
+		float: none;
+	}
+	.reviews-section .top-reviews .links-block{
+		float: none;
+	}
+	footer .tel-heder{
+		display: none;
+	}
+	footer .social{
+		text-align: right;
+	}
+	.action-section .action-list ul{
+		padding-left: 0;
+	}
+	.action-section .action-list ul li p{
+		font-size: 14px;
+		padding: 0;
+	}
+	.action-section .action-list ul li:nth-child(1)::after,
+	.action-section .action-list ul li:nth-child(2)::after{
+		right: -42px;
+		font-size: 50px;
+	}
+
+
+
+
+	.how-order-section .block-form{
+		position: static;
+		clear: both;
+		margin: auto;
+	}
+	.how-order-section ul{
+		max-width: none;
+		float: none;
+	}
+	.how-order-section ul li{
+		max-width: 500px !important;
+		text-shadow: 1px 1px 4px #fff;
+		margin: auto;
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+	.how-order-section{
+		background-position: 40% 0;
+	}
+	.button-grean, .button-grean{
+		background-size: cover;
+	}
+}
